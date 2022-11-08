@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="html2pdf.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <title>Kevin Pardo Veas - CV</title>
+  </head>
+  <body class="">
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <a href="" class="nav__logo">Kevin Pardo Veas</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="bx bx-home nav__icon"></i>Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#profile" class="nav__link">
+                <i class="bx bx-user nav__icon"></i>Perfil
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#education" class="nav__link">
+                <i class="bx bxs-book nav__icon"></i>Educación
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="bx bxs-receipt nav__icon"></i>Conocimientos
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#experience" class="nav__link">
+                <i class="bx bxs-briefcase-alt-2 nav__icon"></i>Experiencia
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#certificates" class="nav__link">
+                <i class="bx bxs-award nav__icon"></i>Certificados
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#references" class="nav__link">
+                <i class="bx bx-link-external nav__icon"></i>Referencias
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main bd-container">
+      <!-- Los elementos desde aquí aparecen en el PDF -->
+      <div class="resume" id="area-cv">
+        <div class="resume__left">
+          <!-- ===== HOME ===== -->
+          <section class="home" id="home">
+            <div class="home__container section bd-grid">
+              <div class="home__data bd-grid">
+                <img src="assets/perfil.jpg" alt="" class="home__img" />
+
+                <h1 class="home__title">Kevin Pardo Veas</h1>
+                <h3 class="home__profession">
+                  Analista Programador - Desarrollador Web
+                </h3>
+
+                <!-- Botón para descargar el CV en el PC -->
+                <div>
+                  <a
+                    href="Kevin-Pardo-Veas-CV.pdf"
+                    download=""
+                    class="home__button-movil"
+                    >Descargar</a
+                  >
+                </div>
+              </div>
+
+              <div class="home__address bd-grid">
+                <span class="home__information">
+                  <i class="bx bx-map home__icon"></i>
+                  Calle Bagdad #1106, Maipú, Santiago.
+                </span>
+                <span class="home__information">
+                  <i class="bx bx-envelope home__icon"></i>
+                  kevin.pardov26@gmail.com
+                </span>
+                <span class="home__information">
+                  <i class="bx bx-phone home__icon"></i> +569 90914436
+                </span>
+              </div>
+            </div>
+
+            <!-- Dark Mode -->
+            <i
+              class="bx bx-moon change-theme"
+              title="Theme"
+              id="theme-button"
+            ></i>
+
+            <!-- Botón Generar PDF -->
+            <i
+              class="bx bx-download generate-pdf"
+              title="Generate PDF"
+              id="resume-button"
+            ></i>
+          </section>
+
+          <!-- ===== PERFIL ===== -->
+          <section class="profile section" id="profile">
+            <h2 class="section-title">Perfil</h2>
+
+            <p class="profile__description">
+              Soy una persona joven, formal y llena de energía para integrarme
+              en un equipo de trabajo, para poder aportar mi conocimiento y
+              formación para así poder aumentar mi experiencia profesional en un
+              entorno real, fuera del ámbito académico. 
+            </p>
+          </section>
+
+          <!-- ===== EDUCACIÓN ===== -->
+          <section class="education section" id="education">
+            <h2 class="section-title">Educación</h2>
+
+            <div class="education__container bd-grid">
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                  <span class="education__line"></span>
+                </div>
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">
+                    Técnico en Programación y Análisis de Sistemas
+                  </h3>
+                  <span class="education__studies"
+                    >Instituto Profesional AIEP</span
+                  >
+                  <span class="education__year">2019 - 2022</span>
+                </div>
+              </div>
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                  <span class="education__line"></span>
+                </div>
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">JavaScript Certificado</h3>
+                  <span class="education__studies">CoderHouse</span>
+                  <span class="education__year"
+                    >Diciembre 2021 - Febrero 2022</span
+                  >
+                </div>
+              </div>
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                  <!-- <span class="education__line"></span> -->
+                </div>
+
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">React Js</h3>
+                  <span class="education__studies">CoderHouse</span>
+                  <span class="education__year">Cursando</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- ===== SOCIAL ===== -->
+          <section class="social section">
+            <h2 class="section-title">REDES SOCIALES</h2>
+
+            <div class="social__container bd-grid">
+              <a
+                href="https://www.linkedin.com/in/kevinpardoveas/"
+                class="social__link"
+                target="_blank"
+              >
+                <i class="bx bxl-linkedin social__icon"></i>
+                Linkedin
+              </a>
+              <a
+                href="https://github.com/KvinPardo"
+                class="social__link"
+                target="_blank"
+              >
+                <i class="bx bxl-github social__icon"></i>
+                Github
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=56990914436&text=Hola%20Kevin"
+                class="social__link"
+                target="_blank"
+              >
+                <i class="bx bxl-whatsapp social__icon"></i>
+                Whatsapp
+              </a>
+            </div>
+          </section>
+        </div>
+
+        <!-- ============ LADO DERECHO ========== -->
+
+        <div class="resume__right">
+          <!-- ============ EXPERIENCE ========== -->
+          <section class="experience section" id="experience">
+            <h2 class="section-title">Experiencia</h2>
+
+            <div class="experience__container bd-grid">
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">
+                    Diseño y Análisis Web - WordPress
+                  </h3>
+                  <span class="experience__company"
+                    >Ilustre Municipalidad de Ñuñoa - 2022</span
+                  >
+                  <p class="experience__description">
+                    Diseño e implementación de mejoras para el Sitio Web durante
+                    el mes de Septiembre
+                  </p>
+                </div>
+              </div>
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">Vendedor</h3>
+                  <span class="experience__company"
+                    >Street Machine - Ñuñoa - 2020</span
+                  >
+                  <p class="experience__description">
+                    Apoyo como vendedor - atención al cliente
+                  </p>
+                </div>
+              </div>
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <!-- <span class="experience__line"></span> -->
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">Vendedor</h3>
+                  <span class="experience__company"
+                    >Family Park Mid Mall Maipú - 2019</span
+                  >
+                  <p class="experience__description">
+                    Cajero - Inventario - Atención al Cliente
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- ============ SKILLS ========== -->
+          <section class="skills section" id="skills">
+            <h2 class="section-title">Conocimientos</h2>
+            <div class="skills__content bd-grid">
+              <ul class="skills__data">
+                <li class="skills__name">
+                  <span class="skills__circle"></span>HTML
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span>CSS
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span>JAVASCRIPT
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span>TAILWIND CSS
+                </li>
+              </ul>
+              <ul class="skills__data">
+                <li class="skills__name">
+                  <span class="skills__circle"></span>REACT JS
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span>FIREBASE
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span>WORDPRESS
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- ============ CERTIFICADOS ========== -->
+          <section class="certificate section" id="certificates">
+            <h2 class="section-title">Certificados</h2>
+            <div class="certificate__container bd-grid">
+              <div class="certificate__content">
+                <a
+                  href="coderhouse.png"
+                  target="_blank"
+                  class="certificate__title"
+                  ><h3>JavaScript - 2022 - CoderHouse</h3></a
+                >
+                <p class="certificate__description">
+                  Certificado al completar correctamente el Curso de JavaScript
+                </p>
+              </div>
+              <div class="certificate__content">
+                <a href="SENCE.png" target="_blank" class="certificate__title"
+                  ><h3>Java - 2021 - SENCE</h3></a
+                >
+                <p class="certificate__description">
+                  DESARROLLADOR DE APLICACIONES DE SOFTWARE
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- ============ REFERENCES ========== -->
+          <section class="references section" id="references">
+            <h2 class="section-title">Referencias</h2>
+
+            <div class="references__container bd-grid">
+              <div class="references__content bd-grid">
+                <span class="references__subtitles"
+                  >Alejandro Ancalao Romero - Jefe Departamento de
+                  Patrimonio</span
+                >
+                <h3 class="references__title"></h3>
+                <h3 class="references__title">
+                  Ilustre Municipalidad de Ñuñoa
+                </h3>
+                <ul class="references__contact">
+                  <h3>Email: aancalao@nunoa.cl</h3>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- ============ LANGUAGES ========== -->
+          <section class="languages section">
+            <h2 class="section-title">Idiomas</h2>
+
+            <div class="languages__container">
+              <ul class="languages__content bd-grid">
+                <li class="languages__name">
+                  <span class="languages__circle"></span>Inglés - Intermedio
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- ============ INTERESTS ========== -->
+          <section class="interests section">
+            <h2 class="section-title">Intereses</h2>
+
+            <div class="interests__container bd-grid">
+              <div class="interests__content">
+                <i class="bx bx-headphone interests__icon"></i>
+                <span class="interests__name">Música</span>
+              </div>
+              <div class="interests__content">
+                <i class="bx bx-movie-play interests__icon"></i>
+                <span class="interests__name">Cine</span>
+              </div>
+              <div class="interests__content">
+                <i class="bx bx-walk interests__icon"></i>
+                <span class="interests__name">Caminar</span>
+              </div>
+              <div class="interests__content">
+                <i class="bx bx-game interests__icon"></i>
+                <span class="interests__name">Juegos</span>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- ===== SCROLL TO TOP ===== -->
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="bx bxs-up-arrow-circle scrolltop__icon"></i>
+    </a>
+
+    <script src="html2pdf.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <!-- <script src="js/html2pdf.bundle.js" ></script> -->
+  </body>
+</html>
